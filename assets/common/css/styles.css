@@ -1,0 +1,230 @@
+/* Общие стили для body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Основная структура */
+header {
+    z-index: 1000;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Более заметная тень */
+}
+
+/* Логотип */
+.logo {
+    font-size: 24px;
+}
+
+/* Ссылки навигации */
+nav {
+    display: flex;
+    gap: 35px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Языковое меню и иконки */
+.language-switch {
+    position: relative;
+    margin-left: 25px; /* Отступ между языковым меню и кнопкой меню */
+}
+
+.language-menu-icon {
+    cursor: pointer;
+    font-size: 30px; /* Увеличение размера иконки */
+    color: #000;
+    filter: brightness(0.9);
+    transition: filter 0.3s ease;
+}
+
+.language-menu-icon:hover {
+    filter: brightness(1.2); /* Увеличение яркости при наведении */
+}
+
+/* Меню языков */
+.language-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.language-option img.flag {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.language-option span {
+    color: #000;
+}
+
+.language-menu.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Дополнительное меню для десктопа */
+.extra-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    right: 150px;
+    top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.extra-menu-icon {
+    font-size: 30px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.extra-menu-icon:hover {
+    color: #a6c4c5; /* Изменяем цвет на синий при наведении */
+}
+
+.extra-menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+.extra-menu.show {
+    display: flex;
+    opacity: 1;
+}
+
+/* Мобильное меню */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.menu-icon:hover {
+    color: #a6c4c5; /* Изменяем цвет на синий при наведении */
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.mobile-menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .extra-menu-icon {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .language-switch {
+        order: -1;
+        margin-left: 0px; /* Убираем отступ для мобильных */
+    }
+
+    .language-menu {
+        left: 200%;
+        transform: translateX(-50%);
+        right: auto;
+    }
+}
+
+/* Скрытие дополнительных ссылок на десктопах */
+@media (min-width: 769px) {
+    .mobile-menu a:nth-child(n+5) {
+        display: none;
+    }
+}
+
+/* Основная часть страницы */
+main {
+    flex-grow: 1;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+}

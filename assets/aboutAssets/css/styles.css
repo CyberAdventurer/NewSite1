@@ -1,0 +1,195 @@
+/* Общие стили */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Стили секций */
+section {
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовки */
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Текст */
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Стили для блока партнёров */
+.partners-logos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.partner {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.partner p {
+    font-size: 1.1rem;
+    color: #333;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Увеличим тень для большего эффекта */
+}
+
+.partner img {
+    max-width: 150px; /* Увеличим размер */
+    margin-bottom: 15px;
+    border-radius: 50%; 
+    border: 3px solid #007BFF; /* Увеличим толщину обводки */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Добавим больше тени */
+}
+
+.partner img:hover {
+    transform: scale(1.2); /* Увеличим на 20% при наведении */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Более сильная тень при ховере */
+}
+
+.partenr h2 {
+    font-size: 32px; /* Увеличим размер заголовка */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Увеличим тень */
+    color: #333;
+}
+
+/* Медиа-запрос для экранов меньше 768px */
+@media (max-width: 768px) {
+    .partners-logos {
+        flex-direction: column;
+    }
+
+    .partner {
+        flex-basis: 100%;
+    }
+
+    .partners-cta {
+        text-align: center; /* Центрирование кнопки "Стать партнёром" */
+    }
+}
+
+/* Блок с формой партнёров */
+.partner-form-section {
+    margin-top: 40px; /* Отступ сверху для разделения */
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Ограничение по ширине */
+    margin-left: auto;
+    margin-right: auto; /* Центрирование блока */
+}
+
+.partners-cta {
+    text-align: center; /* Центрируем кнопку стать партнёром */
+}
+
+/* Форма партнёров */
+.partner-form {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 0 20px; /* Задаем 0 padding для скрытого состояния */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+    margin: 20px 0;
+}
+
+.partner-form.active {
+    max-height: 1000px; /* Подберите нужное значение по высоте вашей формы */
+    padding: 20px; /* Добавляем padding при раскрытии */
+    opacity: 1;
+}
+
+.partner-form h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.partner-form input, 
+.partner-form textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.partner-form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.partner-form button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: #0069D9; /* Сделаем кнопку более насыщенной */
+    color: #fff;
+    text-decoration: none; /* Убирает подчёркивание */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Добавим тень к тексту кнопки */
+    border-radius: 8px; /* Сделаем края более округлыми */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+
+/* Стили футера */
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}

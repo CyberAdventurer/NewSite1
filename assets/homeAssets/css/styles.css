@@ -1,0 +1,1113 @@
+/* Стили для мобильных устройств (от 320px и выше) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стили слайдера */
+main .slider {
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+main .slider-track {
+    display: flex;
+    height: 100%;
+}
+
+main .slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Градиентное затемнение для картинок слайдера */
+main .slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+    z-index: 1;
+}
+
+/* Применение теней к тексту */
+main h2, main p, main a {
+    color: white;
+    margin: 10px 0;
+    position: relative;
+    z-index: 2; /* Текст над затемненным фоном */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Тень для текста */
+}
+
+/* Стили для кнопки */
+main .slider a {
+    display: inline-block;
+    padding: 8px 16px; /* Уменьшаем размер кнопки для мобильных устройств */
+    margin-top: 10px; /* Уменьшаем отступы */
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 14px; /* Уменьшаем размер шрифта для кнопки */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для кнопок */
+}
+
+main a:hover {
+    background-color: #0056b3;
+}
+
+/* Адаптивные шрифты для заголовков и текста */
+main h2 {
+    font-size: calc(1.5rem + 1vw); /* Уменьшаем размер заголовков для мобильных */
+    font-weight: 700;
+}
+
+main p {
+    font-size: calc(0.9rem + 0.5vw); /* Адаптивный размер текста */
+    line-height: 1.4; /* Немного уменьшаем расстояние между строками */
+}
+
+/* Фоновые изображения для слайдов */
+main .slide-1 {
+    background-image: url('/assets/homeAssets/img/slide1.webp');
+}
+
+main .slide-2 {
+    background-image: url('/assets/homeAssets/img/slide2.webp');
+}
+
+main .slide-3 {
+    background-image: url('/assets/homeAssets/img/slide3.webp');
+}
+
+/* Мобильная адаптация для кнопок */
+@media (max-width: 768px) {
+    main .slider {
+        height: 60vh; /* Дополнительно уменьшаем высоту слайдера на маленьких экранах */
+    }
+
+    main .slider a {
+        width: 80%; /* Кнопка растягивается на 80% ширины экрана */
+    }
+
+    main h2 {
+        font-size: 1.8rem; /* Уменьшаем размер заголовков на маленьких экранах */
+    }
+
+    main p {
+        font-size: 1rem; /* Корректируем размер текста */
+    }
+}
+
+/* Фоновые изображения для секций */
+.background-why-choose-us {
+    height: 80vh;
+    background-image: url('/assets/homeAssets/img/why-choose-us.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    border-radius: 20px; /* Мягкие углы */
+    justify-content: center; /* Горизонтальное выравнивание */
+    align-items: center; /* Вертикальное выравнивание */
+}
+
+/* Стили для секции "Почему выбирают нас" */
+.big-block-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    padding: 20px; /* Отступы вокруг текста */
+    border-radius: 10px; /* Закругленные углы */
+    color: white; /* Белый текст для контраста */
+    max-width: 80%; /* Ограничение ширины текста */
+    text-align: center;
+}
+
+/* Адаптивные стили для маленьких экранов */
+@media (max-width: 768px) {
+    .big-block-content {
+        max-width: 90%; /* Ширина блока на маленьких экранах */
+    }
+}
+
+.big-block-content h2 {
+    font-size: calc(1.5rem + 1vw); /* Адаптивный размер заголовка */
+    margin-bottom: 15px;
+}
+
+.big-block-content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Основной стиль секции "Наши Партнеры" */
+.partners-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 900px; /* Уменьшаем ширину блока */
+}
+
+/* Заголовок секции */
+.partners-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Тень для текста */
+}
+
+/* Подзаголовок секции */
+.partners-section p {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Обертка для логотипов партнеров */
+.partners-logos-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Центрируем лого */
+    flex-wrap: wrap; /* Делаем логотипы адаптивными */
+    padding: 20px 0;
+}
+
+/* Логотипы партнеров */
+.partner-logo {
+    background-color: #ffffff; /* Белый фон для логотипов */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень вокруг каждого логотипа */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 200px; /* Увеличиваем размер логотипов */
+    max-height: 200px; /* Увеличиваем размер логотипов */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Изображение логотипов */
+.partner-logo img {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Увеличиваем размер логотипа */
+    max-height: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Эффект при наведении на логотипы */
+.partner-logo:hover img {
+    transform: scale(1.05); /* Легкое увеличение */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .partners-section {
+        padding: 30px 15px;
+    }
+
+    .partners-section h2 {
+        font-size: 2rem;
+    }
+
+    .partners-section p {
+        font-size: 1rem;
+    }
+
+    .partners-logos-wrapper {
+        gap: 10px;
+    }
+
+    .partner-logo {
+        max-width: 100px; /* Меньше ширина на мобильных */
+        max-height: 100px;
+        padding: 15px;
+    }
+
+    .partner-logo img {
+        max-width: 80px; /* Уменьшаем размер логотипов на мобильных */
+        max-height: 80px;
+    }
+}
+
+/* Фоновые изображения для инфографики */
+.background-infographic-first {
+    background-image: url('/assets/homeAssets/img/infographic-first.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.background-infographic-second {
+    background-image: url('/assets/homeAssets/img/infographic-second.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.background-infographic-third {
+    background-image: url('/assets/homeAssets/img/infographic-third.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.background-infographic-first, .background-infographic-second, .background-infographic-third {
+    height: 45vh;
+    width: 100%;
+    position: relative;
+    border-radius: 15px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    overflow: hidden; /* Обрезка краев */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Градиент для улучшения контраста текста */
+.infographic-step::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    z-index: 1;
+}
+
+/* Flexbox для центрирования элементов */
+.infographic-step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирование по вертикали */
+    align-items: center;
+    position: relative;
+    height: 100%; /* Высота для контейнера */
+    padding: 15px; /* Внутренний отступ */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Стиль текста */
+.infographic-step h3, .infographic-step p {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px; /* Небольшой отступ для текста */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Тень для текста */
+}
+
+.infographic-step h3 {
+    font-size: calc(1.5rem + 0.5vw); /* Адаптивный размер заголовка */
+    margin-bottom: 10px;
+}
+
+.infographic-step p {
+    font-size: calc(0.9rem + 0.3vw); /* Адаптивный размер текста */
+    line-height: 1.4;
+}
+
+/* Эффекты при наведении */
+.infographic-step:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптация для экранов шириной до 1200 пикселей (в столбик) */
+@media (max-width: 1200px) {
+    .infographic {
+        flex-direction: column !important; /* Расположение блоков в столбик */
+        gap: 20px; /* Промежутки между блоками */
+    }
+    .background-infographic-first, .background-infographic-second, .background-infographic-third {
+        height: 50vh; /* Уменьшение высоты для мобильных */
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .background-infographic-first, .background-infographic-second, .background-infographic-third {
+        height: 30vh; /* Уменьшение высоты для мобильных */
+    }
+
+    .infographic-step {
+        padding: 10px; /* Уменьшенный отступ для мобильных */
+    }
+
+    .infographic-step h3 {
+        font-size: 1.2rem; /* Меньший размер заголовка для мобильных */
+        margin-bottom: 5px; /* Уменьшенный отступ заголовка */
+    }
+
+    .infographic-step p {
+        font-size: 1rem; /* Меньший размер текста для мобильных */
+        line-height: 1.4;
+        margin-top: 5px; /* Уменьшенный отступ между заголовком и текстом */
+        margin-bottom: 10px;
+    }
+}
+
+/* Увеличение шрифтов для ПК */
+@media (min-width: 1024px) {
+    .infographic-step h3 {
+        font-size: 2rem !important; /* Увеличиваем размер заголовка */
+        margin-bottom: 10px !important; /* Добавляем небольшие отступы */
+    }
+    .infographic-step p {
+        font-size: 1.25rem !important; /* Увеличиваем размер текста */
+        line-height: 1.6 !important;
+    }
+}
+
+/* Основной блок вакансий */
+.vacancy-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f1f1f1; /* Светло-серый фон */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Заголовок секции */
+.vacancy-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2f4f4f; /* Более тёмный цвет для заголовка */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #6a9ba3, #4e7a81); /* Градиент более насыщенных стальных оттенков */
+    -webkit-background-clip: text;
+    color: transparent; /* Градиентный текст */
+}
+
+/* Блоки вакансий */
+.vacancy-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Адаптивное поведение для мобильных */
+}
+
+/* Карточки вакансий */
+.vacancy-item {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vacancy-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Изображения вакансий */
+.vacancy-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 5px solid #6a9ba3; /* Более тёмный стальной цвет */
+}
+
+/* Информация о вакансии */
+.vacancy-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.vacancy-info h3 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    color: #4e7a81; /* Более насыщенный стальной цвет */
+}
+
+.vacancy-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333; /* Более тёмный текст для лучшей читаемости */
+}
+
+/* Кнопка */
+.btn-apply {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4e7a81; /* Синий-стальной цвет для кнопки */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-apply:hover {
+    background-color: #365b5f; /* Ещё более тёмный цвет при наведении */
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .vacancy-wrapper {
+        flex-direction: column;
+    }
+    .vacancy-item {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .vacancy-item img {
+        height: 150px; /* Меньше высота для мобильных */
+    }
+    .vacancy-info h3 {
+        font-size: 1.5rem;
+    }
+    .vacancy-info p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Стили для секции "Преимущества работы с нами" */
+.advantages {
+    padding: 40px 0;
+    text-align: center;
+    color: #333;
+}
+
+.advantages h2 {
+    font-size: calc(1.5rem + 0.5vw); /* Адаптивный размер заголовка */
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+/* Блоки располагаются в ряд на больших экранах и вертикально на мобильных */
+.advantages-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.advantage-block {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    width: 25%;
+    height: auto; /* Высота зависит от содержимого */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.advantage-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Изображение покрывает всю ширину и высоту миниблока */
+.advantage-icon img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Нижний футер с точками */
+.advantage-footer {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.footer-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.footer-point {
+    width: 10px; /* Фиксированный размер точек */
+    height: 10px;
+    background-color: #a6c4c5;
+    border-radius: 50%;
+}
+
+/* Центральная точка больше */
+.footer-point:nth-child(2) {
+    width: 16px;
+    height: 16px;
+}
+
+/* Прямоугольник с градиентом и закругленными углами */
+.footer-line:before,
+.footer-line:after {
+    content: "";
+    height: 10px;
+    width: 100px; /* Фиксированная ширина */
+    background: linear-gradient(to right, #a6c4c5, white); /* Плавный градиент */
+    display: inline-block;
+}
+
+.footer-line:after {
+    background: linear-gradient(to left, #a6c4c5, white); /* Градиент в обратную сторону */
+}
+
+/* Адаптация для мобильных устройств до 768px */
+@media (max-width: 768px) {
+    .advantages-wrapper {
+        flex-direction: column; /* Вертикальная ориентация для мобильных */
+        align-items: center;
+    }
+
+    .advantage-block {
+        width: 80%; /* Более узкие блоки для мобильных */
+        height: auto; /* Высота зависит от содержимого */
+    }
+}
+
+
+
+/* Адаптация для десктопов (1024px и выше) */
+@media (min-width: 1024px) {
+    .advantage-block {
+        width: 30%;
+        height: calc(35vh + 10vw); /* Высота для больших экранов */
+    }
+}
+
+.background-services {
+    background-image: url('/assets/homeAssets/img/services.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Основные секции */
+section {
+    padding: 20px;
+    margin: 50vh auto;
+}
+
+section:first-of-type {
+    margin-top: 20vh;
+}
+
+section:last-of-type {
+    margin-bottom: 20vh;
+}
+
+/* Контент в секциях */
+h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Инфографика */
+.infographic {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.infographic-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infographic-step h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.infographic-step p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Основная секция преимуществ */
+.benefits-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Заголовок секции */
+.benefits-grid h2 {
+    font-size: 2.0rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Контейнер для каждого блока преимуществ */
+.benefit-block {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(33.333% - 20px); /* Для 3-х блоков в строке */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 300px; /* Устанавливаем минимальную высоту для равномерных блоков */
+}
+
+/* Эффект при наведении на блоки */
+.benefit-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Иконки в блоках */
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #4a90e2; /* Приятный синий цвет для иконок */
+}
+
+/* Заголовки блоков */
+.benefit-title {
+    flex-grow: 1; /* Заголовок занимает доступное пространство */
+    display: flex;
+    align-items: flex-start; /* Выровняем заголовок по верху */
+    margin-bottom: 10px; /* Чуть меньше отступ между заголовком и текстом */
+}
+
+.benefit-title h3 {
+    font-size: 1.95rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Текст в блоках */
+.benefit-text {
+    flex-grow: 2; /* Текст занимает оставшееся пространство */
+    display: flex;
+    align-items: flex-end; /* Выровняем текст по низу */
+}
+
+.benefit-text p {
+    font-size: 0.95 rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    .benefit-block {
+        width: calc(50% - 20px); /* Два блока в строке на планшетах */
+    }
+}
+
+@media (max-width: 480px) {
+    .benefit-block {
+        width: 100%; /* Один блок в строке на телефонах */
+        margin-bottom: 20px; /* Пространство между блоками на мобильных */
+    }
+
+    .benefit-title h3 {
+        font-size: 1.5rem; /* Уменьшим размер заголовка для мобильных */
+    }
+
+    .benefit-text p {
+        font-size: 0.9rem; /* Более компактный текст на маленьких экранах */
+    }
+}
+
+/* Секция миссии компании */
+.about-company {
+    background-color: #ffffff; /* Белый фон */
+    padding: 120px 0; /* Просторные отступы сверху и снизу */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 400px; /* Минимальная высота секции */
+}
+
+/* Контейнер для текста с тенью и закруглёнными углами */
+.about-company-content {
+    max-width: 800px; /* Ограничим ширину текста */
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Светло-серый фон */
+    padding: 60px; /* Увеличиваем внутренние отступы */
+    border-radius: 20px; /* Закруглённые углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Более мягкая тень */
+}
+
+/* Заголовок */
+.about-company-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Декоративная линия под заголовком */
+.about-company-content h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #6185a8; /* Более насыщенный синий цвет */
+    margin: 10px auto 0;
+}
+
+/* Основной текст */
+.about-company-content p {
+    font-size: 1.3rem;
+    color: #666;
+    line-height: 1.8; /* Чуть увеличим межстрочное расстояние */
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .about-company-content {
+        padding: 30px; /* Уменьшаем отступы на маленьких экранах */
+    }
+
+    .about-company-content h2 {
+        font-size: 2rem; /* Уменьшаем размер заголовка */
+    }
+
+    .about-company-content p {
+        font-size: 1.1rem; /* Уменьшаем текст */
+    }
+}
+
+/* Секция отзывов */
+.testimonials {
+    background: linear-gradient(135deg, #f1f5fc, #dbe8f6); /* Немного более выраженный градиент */
+    padding: 80px 0; /* Просторные отступы сверху и снизу */
+    text-align: center;
+}
+
+/* Заголовок */
+.testimonials h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень для заголовка */
+}
+
+/* Контейнер для отзывов */
+.testimonials .testimonial {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    flex: 1 1 calc(30% - 40px); /* Три отзыва в строке */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Выравнивание по вертикали */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 320px; /* Минимальная высота для всех карточек */
+}
+
+/* Эффект при наведении на отзыв */
+.testimonials .testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Более выраженная тень при наведении */
+    background-color: #f0f8ff; /* Лёгкое изменение цвета фона */
+}
+
+/* Аватар */
+.testimonial-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Круглый аватар */
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #4a90e2; /* Обводка */
+}
+
+/* Текст отзыва */
+.testimonials .testimonial p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify; /* Выровняем текст */
+}
+
+/* Имя автора отзыва */
+.testimonials .testimonial h4 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #333;
+}
+
+/* Flexbox для отзывов */
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Пространство между отзывами */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .testimonials .testimonial {
+        flex: 1 1 100%; /* Один отзыв в строке на маленьких экранах */
+        margin: 20px 0;
+    }
+}
+/* Основной контейнер для секции FAQ */
+.faq {
+    background-color: #f9f9f9; /* Светло-серый фон */
+    padding: 60px 20px; /* Просторные отступы */
+    border-radius: 10px; /* Закругленные углы для секции */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    text-align: center; /* Центрирование текста */
+}
+
+/* Заголовок секции FAQ */
+.faq h2 {
+    font-size: 2.5rem; /* Размер заголовка */
+    font-weight: 700; /* Толстый текст */
+    color: #507F75; /* Цвет заголовка, как на других секциях */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для заголовка */
+    margin-bottom: 40px; /* Отступ снизу */
+}
+
+/* Вопросы в секции FAQ */
+.faq-item {
+    background-color: #ffffff; /* Белый фон для вопросов */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Легкая тень для вопросов */
+    padding: 20px; /* Внутренние отступы */
+    margin-bottom: 20px; /* Отступ между вопросами */
+    text-align: left; /* Выровнено по левому краю */
+    transition: box-shadow 0.3s ease; /* Плавный переход тени при наведении */
+}
+
+/* Эффект при наведении на вопросы */
+.faq-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Увеличение тени при наведении */
+}
+
+/* Заголовки вопросов */
+.faq-item h3 {
+    font-size: 1.8rem; /* Размер заголовка вопроса */
+    font-weight: 600; /* Полужирный текст */
+    color: #507F75; /* Цвет заголовка вопроса */
+    margin-bottom: 10px; /* Отступ между заголовком и текстом */
+}
+
+.faq-item h3 {
+    text-align: center;
+}
+
+/* Текст ответов */
+.faq-item p {
+    font-size: 1rem; /* Размер текста ответа */
+    line-height: 1.6; /* Интервал между строками */
+    color: #333; /* Темный цвет текста для читаемости */
+    margin: 0; /* Убираем лишние отступы */
+}
+
+/* Контейнер для кнопки */
+.faq-button-container {
+    margin-top: 30px; /* Отступ сверху от вопросов */
+    text-align: center; /* Центрирование кнопки */
+}
+
+/* Стили для кнопки */
+.faq-button {
+    display: inline-block;
+    padding: 12px 25px; /* Внутренние отступы для кнопки */
+    font-size: 1.2rem; /* Размер текста */
+    font-weight: 600; /* Полужирный текст */
+    color: #ffffff; /* Белый текст */
+    background-color: #507F75; /* Цвет кнопки */
+    border-radius: 8px; /* Закругленные углы */
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Плавный переход для тени и цвета */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Эффект при наведении */
+.faq-button:hover {
+    background-color: #396056; /* Более тёмный цвет при наведении */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Усиленная тень при наведении */
+}
+
+@media (max-width: 768px) {
+    .faq-item h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Стили для блока CTA */
+.cta-block {
+    background-color: #4e7a81; /* Приятный темно-синий фон */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Легкая тень */
+}
+
+/* Контент внутри блока */
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+
+/* Заголовок CTA */
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Легкая тень на тексте */
+}
+
+/* Текст в CTA */
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Кнопка CTA */
+.cta-button {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #ff6f61; /* Контрастный цвет кнопки (яркий оранжево-красный) */
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Легкая тень */
+}
+
+/* Эффект при наведении на кнопку */
+.cta-button:hover {
+    background-color: #ff4e3d; /* Еще более яркий цвет при наведении */
+    transform: translateY(-5px); /* Поднятие кнопки при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Усиленная тень при наведении */
+}
+
+/* Адаптивные стили для маленьких экранов */
+@media (max-width: 768px) {
+    .cta-block {
+        padding: 40px 15px;
+    }
+
+    .cta-content h2 {
+        font-size: 1.5rem; /* Уменьшаем заголовок на маленьких экранах */
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem; /* Уменьшаем кнопку для мобильных устройств */
+    }
+}
+
+
+/* Адаптация для планшетов (от 768px и выше) */
+@media (min-width: 768px) {
+    .background-why-choose-us,.background-partners
+    {
+        width: 90vh;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .infographic {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service {
+        padding: 30px;
+    }
+}
+
+/* Адаптация для десктопов (от 1024px и выше) */
+@media (min-width: 1024px) {
+    section {
+        max-width: 1200px;
+        padding: 40px;
+    }
+
+    .infographic-step {
+        align-items: center;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-company-content, .cta-block {
+        padding: 40px;
+    }
+
+
+    .section-divider {
+        height: 300px;
+    }
+}

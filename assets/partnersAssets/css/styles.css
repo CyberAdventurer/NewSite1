@@ -1,0 +1,152 @@
+.partners {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.partners h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.partners-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.partner {
+    flex-basis: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.partner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.partner img {
+    max-width: 70%; /* Уменьшаем изображения до 80% от их исходного размера */
+    margin-bottom: 15px;
+    border-radius: 10px; /* Добавляем скругленные углы */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+}
+
+.partner img:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Усиливаем тень при наведении */
+}
+
+
+.partner p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .partner {
+        flex-basis: 100%;
+    }
+}
+
+.partner-opportunities {
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.partner-opportunities h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.partner-opportunities p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .partner-opportunities {
+        padding: 20px;
+    }
+}
+
+.partner-contact {
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.partner-contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.partner-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Убедимся, что форма занимает всю ширину */
+}
+
+.partner-contact label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%; /* Лейблы будут растягиваться по ширине полей */
+    max-width: 500px; /* Ширина будет соответствовать полям */
+    margin-left: 10px; /* Отступ слева для красивого выравнивания */
+}
+
+.partner-contact input, 
+.partner-contact textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.partner-contact button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.partner-contact button:hover {
+    background-color: #0056b3;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .partner-contact {
+        padding: 20px;
+    }
+
+    .partner-contact input, 
+    .partner-contact textarea {
+        width: 100%;
+    }
+}
+
+

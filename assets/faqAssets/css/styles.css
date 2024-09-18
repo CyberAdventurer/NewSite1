@@ -1,0 +1,189 @@
+/* Стиль для блока с требованиями */
+.requirements {
+    margin: 40px auto; /* Центрирование */
+    padding: 30px;
+    background-color: #f9f9f9; /* Лёгкий фон */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    max-width: 800px; /* Ограничение ширины */
+    text-align: left; /* Выровнять текст по левому краю */
+}
+
+.requirements ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.requirements ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-left: 25px; /* Отступ под иконку */
+    position: relative;
+}
+
+.requirements ul li::before {
+    content: "✔"; /* Иконка галочки */
+    color: #007BFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+}
+
+/* Стиль для процесса подачи заявки */
+.apply-process {
+    margin: 40px auto; /* Центрирование */
+    padding: 30px;
+    background-color: #f9f9f9; /* Лёгкий фон */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    max-width: 800px; /* Ограничение ширины */
+    text-align: left; /* Выровнять текст по левому краю */
+}
+
+.apply-process ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+.apply-process ol li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Стиль для FAQ */
+.faq {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.faq h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Стиль для элементов FAQ */
+.faq-item {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    color: #333; /* Контрастный цвет текста */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.faq-answer p {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 100px; /* Достаточно для показа текста */
+}
+
+/* Кнопки */
+button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .faq, .apply-process, .requirements {
+        padding: 20px;
+    }
+}
+
+.contact-form-section {
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: left;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}

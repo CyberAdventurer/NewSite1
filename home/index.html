@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="/assets/common/css/styles.css">
+    <link rel="stylesheet" href="/assets/homeAssets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Логотип</div>
+        <nav>
+            <a href="/home/index.html" id="home-link">Главная</a>
+            <a href="/about/index.html" id="about-link">О нас</a>
+            <a href="/services/index.html" id="services-link">Услуги</a>
+            <a href="/contact/index.html" id="contact-link">Контакты</a>
+        </nav>
+        <div class="extra-menu-icon" onclick="commonToggleExtraMenu()">☰</div>
+        <div class="extra-menu" id="extraMenu">
+            <a href="/partners/index.html" id="partners-link">Партнёры</a>
+            <a href="/faq/index.html" id="faq-link">Часто задаваемые вопросы</a>
+            <a href="/privacy/index.html" id="privacy-link">Политика конфиденциальности</a>
+        </div>
+        
+        <!-- Языковое меню -->
+        <div class="language-switch">
+            <div class="language-menu-icon" onclick="commonToggleLanguageMenu()">🌐</div> <!-- Иконка для открытия меню -->
+            <div class="language-menu" id="languageMenu">
+                <div class="language-option" onclick="commonSetLanguage('ru')">
+                    <img src="/assets/common/img/flags/ru.png" alt="RU" class="flag"> <!-- Флаг России -->
+                    <span>Русский</span>
+                </div>
+                <div class="language-option" onclick="commonSetLanguage('en')">
+                    <img src="/assets/common/img/flags/en.png" alt="EN" class="flag"> <!-- Флаг Англии -->
+                    <span>English</span>
+                </div>
+                <div class="language-option" onclick="commonSetLanguage('ua')">
+                    <img src="/assets/common/img/flags/ua.png" alt="UA" class="flag"> <!-- Флаг Украины -->
+                    <span>Украинский</span>
+                </div>
+                <div class="language-option" onclick="commonSetLanguage('pl')">
+                    <img src="/assets/common/img/flags/pl.png" alt="PL" class="flag"> <!-- Флаг Польши -->
+                    <span>Poland</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Мобильное меню -->
+        <div class="menu-icon" onclick="commonToggleMenu()">☰</div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/home/index.html" id="mobile-home">Главная</a>
+            <a href="/about/index.html" id="mobile-about">О нас</a>
+            <a href="/services/index.html" id="mobile-services">Услуги</a>
+            <a href="/contact/index.html" id="mobile-contact">Контакты</a>
+            <!-- Дополнительные ссылки для мобильного меню -->
+            <a href="/partners/index.html" id="mobile-partners">Партнёры</a>
+            <a href="/faq/index.html" id="mobile-faq">Часто задаваемые вопросы</a>
+            <a href="/privacy/index.html" id="mobile-privacy">Политика конфиденциальности</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="slider">
+            <div class="slider-track">
+                <div class="slide slide-1">
+                    <h2 id="slide-title-1">Начните работать прямо сейчас</h2>
+                    <p id="slide-text-1">Свяжитесь с нами для получения подробностей!</p>
+                    <a href="#" id="slide-link-1">Связаться</a>
+                </div>
+                <div class="slide slide-2">
+                    <h2 id="slide-title-2">Преимущества работы с нами</h2>
+                    <p id="slide-text-2">Получайте бонусы за хорошую работу и социальные гарантии!</p>
+                    <a href="#" id="slide-link-2">Узнать больше</a>
+                </div>
+                <div class="slide slide-3">
+                    <h2 id="slide-title-3">Добро пожаловать в наше агентство</h2>
+                    <p id="slide-text-3">Мы поможем вам найти работу на крупнейших складах!</p>
+                    <a href="#" id="slide-link-3">Подробнее</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1. Почему выбирают нас? -->
+        <section class="big-block background-why-choose-us">
+            <div class="big-block-content">
+                <h2>Почему выбирают нас?</h2>
+                <p>Мы – агентство, специализирующееся на трудоустройстве сотрудников для работы на крупнейших складах. Присоединяйтесь к нам и станьте частью команды, работающей на складе Biedronka!</p>
+                </div>
+        </section>
+
+        <section class="partners-section">
+            <div class="partners-content">
+                <h2>Наши Партнёры</h2>
+                <p>Мы работаем с лучшими логистическими компаниями</p>
+            </div>
+            <div class="partners-logos-wrapper">
+                <div class="partner-logo">
+                    <img src="/assets/homeAssets/img/partner1.webp" alt="Логотип 1">
+                </div>
+                <div class="partner-logo">
+                    <img src="/assets/homeAssets/img/partner2.webp" alt="Логотип 2">
+                </div>
+                <div class="partner-logo">
+                    <img src="/assets/homeAssets/img/partner3.webp" alt="Логотип 3">
+                </div>
+                <!-- Можно добавить больше логотипов -->
+            </div>
+        </section>
+        
+        
+
+      <!-- Инфографика -->
+        <section class="infographic">
+            <div class="infographic-step background-infographic-first">
+                <h3>Шаг 1: Обратитесь к нам</h3>
+                <p>Свяжитесь с нами для получения консультации.</p>
+            </div>
+            <div class="infographic-step background-infographic-second">
+                <h3>Шаг 2: Пройдите интервью</h3>
+                <p>Пройдите собеседование и подготовьтесь к началу работы.</p>
+            </div>
+            <div class="infographic-step background-infographic-third">
+                <h3>Шаг 3: Начните работать на складе</h3>
+                <p>Присоединяйтесь к команде на складе Biedronka.</p>
+            </div>
+        </section>
+
+
+        <!-- 4. Преимущества сотрудничества -->
+        <section class="advantages">
+            <h2>Преимущества работы с нами</h2>
+            <div class="advantages-wrapper">
+                <div class="advantage-block">
+                    <div class="advantage-icon">
+                        <img src="/assets/homeAssets/img/clock-icon.webp" alt="Flexible Schedule">
+                    </div>
+                    <div class="advantage-title">
+                        <h3>Гибкий график</h3>
+                    </div>
+                    <div class="advantage-text">
+                        <p>Удобные смены</p>
+                    </div>
+                    <div class="advantage-footer">
+                        <div class="footer-line">
+                            <div class="footer-point"></div>
+                            <div class="footer-point"></div>
+                            <div class="footer-point"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="advantage-block">
+                    <div class="advantage-icon">
+                        <img src="/assets/homeAssets/img/salary-icon.webp" alt="Competitive Salary">
+                    </div>
+                    <div class="advantage-title">
+                        <h3>Конкурентная зарплата</h3>
+                    </div>
+                    <div class="advantage-text">
+                        <p>Высокая оплата труда</p>
+                    </div>
+                    <div class="advantage-footer">
+                        <div class="footer-line">
+                            <div class="footer-point"></div>
+                            <div class="footer-point"></div>
+                            <div class="footer-point"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="advantage-block">
+                    <div class="advantage-icon">
+                        <img src="/assets/homeAssets/img/shield-icon.webp" alt="Social Guarantees">
+                    </div>
+                    <div class="advantage-title">
+                        <h3>Социальные гарантии</h3>
+                    </div>
+                    <div class="advantage-text">
+                        <p>Официальное оформление</p>
+                    </div>
+                    <div class="advantage-footer">
+                        <div class="footer-line">
+                            <div class="footer-point"></div>
+                            <div class="footer-point"></div>
+                            <div class="footer-point"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 5. Примеры вакансий -->
+        <section class="vacancy-section">
+            <h2>Примеры вакансий</h2>
+            <div class="vacancy-wrapper">
+                <div class="vacancy-item">
+                    <img src="/assets/homeAssets/img/vacancy3.webp" alt="Комплектовщик">
+                    <div class="vacancy-info">
+                        <h3>Комплектовщик</h3>
+                        <p>Описание работы комплектовщика. Основные задачи: сборка заказов, упаковка товаров и размещение на складе.</p>
+                        <a href="#" class="btn-apply">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="vacancy-item">
+                    <img src="/assets/homeAssets/img/vacancy2.webp" alt="Оператор погрузчика">
+                    <div class="vacancy-info">
+                        <h3>Оператор погрузчика</h3>
+                        <p>Описание работы оператора погрузчика. Управление техникой, перемещение товаров, выполнение складских задач.</p>
+                        <a href="#" class="btn-apply">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="vacancy-item">
+                    <img src="/assets/homeAssets/img/vacancy1.webp" alt="Менеджер склада">
+                    <div class="vacancy-info">
+                        <h3>Менеджер склада</h3>
+                        <p>Описание работы менеджера склада. Управление запасами, координация работы сотрудников, обеспечение порядка.</p>
+                        <a href="#" class="btn-apply">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+        </section>       
+
+<!-- Преимущества работы с нами -->
+        <section class="benefits-grid">
+            <h2>Преимущества работы с нами</h2>
+                <div class="benefit-block">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="benefit-title">
+                        <h3>Стабильная зарплата</h3>
+                    </div>
+                    <div class="benefit-text">
+                        <p>Всегда вовремя. Мы гарантируем регулярные выплаты без задержек.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-block">
+                    <div class="benefit-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="benefit-title">
+                        <h3>Простота в оформлении</h3>
+                    </div>
+                    <div class="benefit-text">
+                        <p>Минимум бюрократии. Легкий и быстрый процесс оформления документов.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-block">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="benefit-title">
+                        <h3>Безопасные условия труда</h3>
+                    </div>
+                    <div class="benefit-text">
+                        <p>Соблюдение всех норм безопасности на рабочем месте. Забота о вашем здоровье и благополучии.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-block">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="benefit-title">
+                        <h3>Дружелюбный коллектив</h3>
+                    </div>
+                    <div class="benefit-text">
+                        <p>Работа в команде, где вам всегда помогут и поддержат.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-block">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="benefit-title">
+                        <h3>Поддержка 24/7</h3>
+                    </div>
+                    <div class="benefit-text">
+                        <p>Круглосуточная поддержка для всех сотрудников по любым вопросам.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-block">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="benefit-title">
+                        <h3>Современное оборудование</h3>
+                    </div>
+                    <div class="benefit-text">
+                        <p>Работа на современных и удобных складских системах и оборудовании.</p>
+                    </div>
+                </div>    
+        </section>
+
+
+
+
+        <!-- 7. Миссия компании -->
+        <section class="about-company">
+            <div class="about-company-content">
+                <h2>Наша миссия</h2>
+                <p>Мы предлагаем надежное трудоустройство и создаем безопасную рабочую среду. Наше сотрудничество с Biedronka позволяет нам предложить лучшие условия для наших сотрудников.</p>
+            </div>
+        </section>        
+
+        <!-- 8. Отзывы -->
+        <section class="testimonials background-testimonials">
+            <h2>Отзывы</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <img src="/assets/contactAssets/img/avatar1.webp" alt="Avatar" class="testimonial-avatar">
+                <p>"Отличная компания! Благодаря им я нашёл работу на складе Бедрёнка. Процесс трудоустройства прошёл легко и без проблем. Спасибо!"</p>
+                <h4>Иван Петров</h4>
+            </div>
+            <div class="testimonial">
+                <img src="/assets/contactAssets/img/avatar2.webp" alt="Avatar" class="testimonial-avatar">
+                <p>"Очень довольна сотрудничеством! Ребята помогли мне с жильём и трудоустройством в Польше. Всё прошло чётко по плану."</p>
+                <h4>Мария Иванова</h4>
+            </div>
+            <div class="testimonial">
+                <img src="/assets/contactAssets/img/avatar3.webp" alt="Avatar" class="testimonial-avatar">
+                <p>"Рекомендую! Агентство быстро нашло для меня вакансию и предложило хорошие условия. Всегда на связи, отвечают на любые вопросы."</p>
+                <h4>Анна Смирнова</h4>
+            </div>
+        </div>
+        </section>
+
+        <!-- 9. Часто задаваемые вопросы (FAQ) -->
+            <section class="faq background-faq">
+                <h2>Часто задаваемые вопросы</h2>
+                <div class="faq-item">
+                    <h3>Нужна ли виза для работы в Польше?</h3>
+                    <p>Да, для работы в Польше требуется рабочая виза или разрешение на работу. Мы поможем вам с оформлением документов.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Какие документы нужны для трудоустройства?</h3>
+                    <p>Паспорт, трудовая книжка, и другие документы, которые мы оговорим при интервью.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Можно ли работать без знания польского языка?</h3>
+                    <p>Да, для некоторых позиций знание польского языка не требуется. Однако базовые знания польского приветствуются и могут помочь вам в работе.</p>
+                </div>
+
+                 <!-- Кнопка перехода на страницу с FAQ -->
+                <div class="faq-button-container">
+                    <a href="/faq.html" class="faq-button">Перейти на страницу с FAQ</a>
+                </div>
+            </section>
+        
+        <!-- 10. Call-to-Action -->
+        <section class="cta-block background-cta">
+            <div class="cta-content">
+                <h2>Присоединяйтесь к нам</h2>
+                <p>Оставьте заявку и начните работать на складе уже сегодня!</p>
+                <a href="#" class="cta-button">Связаться с нами</a>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p id="footer-link">&copy; 2024 Мой Сайт. Все права защищены.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Draggable.min.js"></script>
+    <script src="/assets/common/js/script.js"></script> 
+    <script src="/assets/homeAssets/js/script.js"></script>
+
+</body>
+</html>
