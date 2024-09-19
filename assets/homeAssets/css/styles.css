@@ -91,11 +91,11 @@ main .slide-1 {
 }
 
 main .slide-2 {
-    background-image: url('./assets/homeAssets/img/slide2.webp');
+    background-image: url('../img/slide2.webp');
 }
 
 main .slide-3 {
-    background-image: url('./assets/homeAssets/img/slide3.webp');
+    background-image: url('/assets/homeAssets/img/slide3.webp');
 }
 
 /* Мобильная адаптация для кнопок */
@@ -120,7 +120,7 @@ main .slide-3 {
 /* Фоновые изображения для секций */
 .background-why-choose-us {
     height: 80vh;
-    background-image: url('/assets/homeAssets/img/why-choose-us.webp');
+    background-image: url('../assets/homeAssets/img/why-choose-us.webp');
     background-size: cover;
     background-position: center;
     display: flex;
