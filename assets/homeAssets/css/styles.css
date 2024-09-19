@@ -87,7 +87,7 @@ main p {
 
 /* Фоновые изображения для слайдов */
 main .slide-1 {
-    background-image: url('/homeAssets/img/slide1.webp');
+    background-image: url('../homeAssets/img/slide1.webp');
 }
 
 main .slide-2 {
@@ -95,7 +95,7 @@ main .slide-2 {
 }
 
 main .slide-3 {
-    background-image: url('/assets/homeAssets/img/slide3.webp');
+    background-image: url('../img/slide3.webp');
 }
 
 /* Мобильная адаптация для кнопок */
@@ -120,7 +120,7 @@ main .slide-3 {
 /* Фоновые изображения для секций */
 .background-why-choose-us {
     height: 80vh;
-    background-image: url('/img/why-choose-us.webp');
+    background-image: url('../img/why-choose-us.webp');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -252,19 +252,19 @@ main .slide-3 {
 
 /* Фоновые изображения для инфографики */
 .background-infographic-first {
-    background-image: url('/assets/homeAssets/img/infographic-first.webp');
+    background-image: url('../img/infographic-first.webp');
     background-size: cover;
     background-position: center;
 }
 
 .background-infographic-second {
-    background-image: url('/assets/homeAssets/img/infographic-second.webp');
+    background-image: url('../img/infographic-second.webp');
     background-size: cover;
     background-position: center;
 }
 
 .background-infographic-third {
-    background-image: url('/assets/homeAssets/img/infographic-third.webp');
+    background-image: url('../img/infographic-third.webp');
     background-size: cover;
     background-position: center;
 }
@@ -601,13 +601,6 @@ main .slide-3 {
         height: calc(35vh + 10vw); /* Высота для больших экранов */
     }
 }
-
-.background-services {
-    background-image: url('/assets/homeAssets/img/services.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
 
 /* Основные секции */
 section {
