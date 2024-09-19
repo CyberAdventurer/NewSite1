@@ -120,7 +120,7 @@ main .slide-3 {
 /* Фоновые изображения для секций */
 .background-why-choose-us {
     height: 80vh;
-    background-image: url('assets/homeAssets/img/why-choose-us.webp');
+    background-image: url('../homeAssets/img/why-choose-us.webp');
     background-size: cover;
     background-position: center;
     display: flex;
