@@ -69,7 +69,7 @@ function commonSetLanguage(languageCode) {
 
 // Загрузка JSON с переводами
 function commonLoadLanguage(languageCode) {
-    fetch(`/assets/common/json/${languageCode}.json`)
+    fetch(`../json/${languageCode}.json`)
         .then(response => {
             if (!response.ok) {
                 throw new Error("Ошибка загрузки файла перевода");
