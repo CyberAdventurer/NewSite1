@@ -87,7 +87,7 @@ main p {
 
 /* Фоновые изображения для слайдов */
 main .slide-1 {
-    background-image: url('../homeAssets/img/slide1.webp');
+    background-image: url('../img/slide1.webp');
 }
 
 main .slide-2 {
