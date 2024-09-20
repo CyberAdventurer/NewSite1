@@ -58,13 +58,6 @@ function commonGetUserLanguage() {
 function commonSetLanguage(languageCode) {
     localStorage.setItem("language", languageCode);
     commonLoadLanguage(languageCode);
-    
-    // Проверяем, определена ли функция loadHomeLanguage, перед вызовом
-    if (typeof loadHomeLanguage === "function") {
-        loadHomeLanguage(languageCode);
-    } else {
-        console.error("loadHomeLanguage не определена");
-    }
 }
 
 
