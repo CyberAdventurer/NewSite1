@@ -70,7 +70,20 @@ function commonSetLanguage(languageCode) {
 
 // Загрузка JSON с переводами
 function commonLoadLanguage(languageCode) {
-    fetch(`assets/common/json/${languageCode}.json`)
+    let currentPath = window.location.pathname;
+    let jsonPath = '';
+
+    // Проверка текущего пути и определение правильного пути к JSON
+    if (currentPath.includes('/about/') || currentPath.includes('/contact/') || 
+        currentPath.includes('/services/') || currentPath.includes('/faq/') || 
+        currentPath.includes('/privacy/') || currentPath.includes('/partners/')) {
+        jsonPath = `../assets/common/json/${languageCode}.json`;
+    } else {
+        jsonPath = `assets/common/json/${languageCode}.json`;
+    }
+
+    // Выполняем запрос на загрузку JSON-файла
+    fetch(jsonPath)
         .then(response => {
             if (!response.ok) {
                 throw new Error("Ошибка загрузки файла перевода");
@@ -95,9 +108,9 @@ function commonLoadLanguage(languageCode) {
                 document.getElementById("mobile-partners").textContent = data.partners;
                 document.getElementById("mobile-faq").textContent = data.faq;
                 document.getElementById("mobile-privacy").textContent = data.privacy;
+                
                 // Title
                 const currentPage = window.location.pathname;
-
                 if (currentPage.includes("home")) {
                     document.title = data["title-home"];
                 } else if (currentPage.includes("about")) {
@@ -113,6 +126,7 @@ function commonLoadLanguage(languageCode) {
                 } else if (currentPage.includes("privacy")) {
                     document.title = data["title-privacy"];
                 }
+                
                 // Footer
                 document.getElementById("footer-link").textContent = data.footer;
             } else {
@@ -123,6 +137,7 @@ function commonLoadLanguage(languageCode) {
             console.error("Ошибка при загрузке JSON:", error);
         });
 }
+
 
 // Проверка, сохранён ли язык в localStorage или определение языка браузера
 window.onload = function() {
