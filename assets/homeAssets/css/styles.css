@@ -250,132 +250,105 @@ main .slide-3 {
     }
 }
 
-/* Фоновые изображения для инфографики */
-.background-infographic-first {
-    background-image: url('../img/infographic-first.webp');
-    background-size: cover;
-    background-position: center;
+/* Фон секции */
+.infographic-modern {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #ffffff;
+    gap: 20px;
+    align-items: stretch; /* Блоки растягиваются равномерно по высоте */
 }
 
-.background-infographic-second {
-    background-image: url('../img/infographic-second.webp');
-    background-size: cover;
-    background-position: center;
-}
-
-.background-infographic-third {
-    background-image: url('../img/infographic-third.webp');
-    background-size: cover;
-    background-position: center;
-}
-
-.background-infographic-first, .background-infographic-second, .background-infographic-third {
-    height: 45vh;
-    width: 100%;
-    position: relative;
-    border-radius: 15px; /* Закругленные углы */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
-    overflow: hidden; /* Обрезка краев */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Градиент для улучшения контраста текста */
-.infographic-step::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    z-index: 1;
-}
-
-/* Flexbox для центрирования элементов */
-.infographic-step {
+/* Стиль каждого шага */
+.step-modern {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Центрирование по вертикали */
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-    height: 100%; /* Высота для контейнера */
-    padding: 15px; /* Внутренний отступ */
-    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    height: calc(35vh + 10vw);
+    width: 30%;
+    padding: 20px; /* Добавим отступы */
 }
 
-/* Стиль текста */
-.infographic-step h3, .infographic-step p {
-    position: relative;
-    z-index: 2;
-    color: white;
+/* Эффект при наведении на каждый шаг */
+.step-modern:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Контейнер для иконок */
+.icon-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    flex-grow: 2; /* Картинка занимает больше места */
+}
+
+/* Изображение */
+.icon-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Заголовок шага */
+.step-modern h3 {
+    font-size: clamp(1.2rem, 1.5vw, 1.8rem); /* Адаптивный шрифт */
     text-align: center;
-    margin: 0;
-    padding: 10px; /* Небольшой отступ для текста */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Тень для текста */
+    color: #333;
+    margin: 20px 0 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    flex-grow: 1; /* Заголовок занимает равномерное пространство */
 }
 
-.infographic-step h3 {
-    font-size: calc(1.5rem + 0.5vw); /* Адаптивный размер заголовка */
-    margin-bottom: 10px;
+/* Описание шага */
+.step-modern p {
+    font-size: clamp(0.9rem, 1.2vw, 1.4rem); /* Адаптивный шрифт */
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: auto; /* Сдвигает описание вниз */
+    flex-grow: 1; /* Описание занимает равномерное пространство */
 }
 
-.infographic-step p {
-    font-size: calc(0.9rem + 0.3vw); /* Адаптивный размер текста */
-    line-height: 1.4;
-}
-
-/* Эффекты при наведении */
-.infographic-step:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Адаптация для экранов шириной до 1200 пикселей (в столбик) */
+/* Адаптивность для мобильных устройств и планшетов */
 @media (max-width: 1200px) {
-    .infographic {
-        flex-direction: column !important; /* Расположение блоков в столбик */
-        gap: 20px; /* Промежутки между блоками */
+    .infographic-modern {
+        flex-direction: column;
+        align-items: center;
     }
-    .background-infographic-first, .background-infographic-second, .background-infographic-third {
-        height: 50vh; /* Уменьшение высоты для мобильных */
+
+    .step-modern {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
     }
 }
 
-/* Адаптация для мобильных устройств */
-@media (max-width: 768px) {
-    .background-infographic-first, .background-infographic-second, .background-infographic-third {
-        height: 30vh; /* Уменьшение высоты для мобильных */
+/* Дополнительная адаптация для очень маленьких экранов (меньше 576px) */
+@media (max-width: 576px) {
+    .step-modern {
+        width: 90%;
     }
 
-    .infographic-step {
-        padding: 10px; /* Уменьшенный отступ для мобильных */
+    .step-modern h3 {
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
     }
 
-    .infographic-step h3 {
-        font-size: 1.2rem; /* Меньший размер заголовка для мобильных */
-        margin-bottom: 5px; /* Уменьшенный отступ заголовка */
-    }
-
-    .infographic-step p {
-        font-size: 1rem; /* Меньший размер текста для мобильных */
-        line-height: 1.4;
-        margin-top: 5px; /* Уменьшенный отступ между заголовком и текстом */
-        margin-bottom: 10px;
+    .step-modern p {
+        font-size: clamp(0.8rem, 1vw, 1.2rem);
     }
 }
 
-/* Увеличение шрифтов для ПК */
-@media (min-width: 1024px) {
-    .infographic-step h3 {
-        font-size: 2rem !important; /* Увеличиваем размер заголовка */
-        margin-bottom: 10px !important; /* Добавляем небольшие отступы */
-    }
-    .infographic-step p {
-        font-size: 1.25rem !important; /* Увеличиваем размер текста */
-        line-height: 1.6 !important;
-    }
-}
 
 /* Основной блок вакансий */
 .vacancy-section {
@@ -629,29 +602,6 @@ p {
     margin-bottom: 20px;
 }
 
-/* Инфографика */
-.infographic {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-}
-
-.infographic-step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.infographic-step h3 {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.infographic-step p {
-    font-size: 14px;
-    margin-top: 5px;
-}
 
 /* Основная секция преимуществ */
 .benefits-grid {
@@ -1066,11 +1016,6 @@ p {
         font-size: 18px;
     }
 
-    .infographic {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
     .services-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -1085,10 +1030,6 @@ p {
     section {
         max-width: 1200px;
         padding: 40px;
-    }
-
-    .infographic-step {
-        align-items: center;
     }
 
     .services-grid {
