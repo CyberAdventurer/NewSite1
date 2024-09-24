@@ -1,13 +1,59 @@
 /* Общие стили для body */
+/* Общий стиль для всего сайта */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #f7f7f7; /* Светло-серый фон */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
 }
+
+/* Легкий геометрический узор */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/slanted-stars.svg'); /* Файл SVG */
+    background-size: contain;
+    opacity: 0.2; /* Прозрачность для ненавязчивости */
+    z-index: -1;
+}
+/* Минималистичные блоки */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #007bff; /* Цвет заголовка */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+}
+
 
 /* Основная структура */
 header {
