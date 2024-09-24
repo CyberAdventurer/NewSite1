@@ -18,8 +18,7 @@ body::before {
     height: 100%;
     background-image: url('../img/slanted-stars.svg'); /* Файл SVG */
     background-size: contain;
-    opacity: 0.2; /* Прозрачность для ненавязчивости */
-    z-index: -1;
+    opacity: 0.1; /* Прозрачность для ненавязчивости */
 }
 /* Минималистичные блоки */
 .container {
