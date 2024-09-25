@@ -578,7 +578,7 @@ main .slide-3 {
 /* Основные секции */
 section {
     padding: 20px;
-    margin: 50vh auto;
+    margin: 40vh auto;
 }
 
 section:first-of-type {
@@ -606,8 +606,7 @@ p {
 /* Основная секция преимуществ */
 .benefits-grid {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 20px;
+    padding: 0 20px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
