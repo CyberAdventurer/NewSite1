@@ -1,15 +1,76 @@
 {
-    "slide1_title": "Start working right now",
-    "slide1_text": "Contact us for more details!",
-    "slide1_button": "Contact us",
-    
-    "slide2_title": "Benefits of working with us",
-    "slide2_text": "Join the team and get guaranteed social benefits!",
-    "slide2_button": "Learn more",
-    
-    "slide3_title": "Welcome to our agency",
-    "slide3_text": "We will help you find a job in the largest warehouses!",
-    "slide3_button": "More details",
-    
-    "footer": "© 2024 My Website. All rights reserved."
+    "slide-1-title": "Start working right now",
+    "slide-1-text": "Contact us for more details!",
+    "slide-1-link": "Contact",
+
+    "slide-2-title": "Benefits of working with us",
+    "slide-2-text": "Receive bonuses for good work and social benefits!",
+    "slide-2-link": "Learn more",
+
+    "slide-3-title": "Welcome to our agency",
+    "slide-3-text": "We will help you find work at the largest warehouses!",
+    "slide-3-link": "Learn more",
+
+    "why-choose-us-title": "Why choose us?",
+    "why-choose-us-text": "We are an agency specializing in the employment of staff to work in the largest warehouses. Join us and become part of the team working at the Biedronka warehouse!",
+
+    "partners-title": "Our Partners",
+    "partners-text": "We work with the best logistics companies",
+
+    "step-1-title": "Step 1: Contact us",
+    "step-1-text": "Contact us for consultation.",
+    "step-2-title": "Step 2: Pass the interview",
+    "step-2-text": "Complete the interview and prepare to start working.",
+    "step-3-title": "Step 3: Start working at the warehouse",
+    "step-3-text": "Join the team at the Biedronka warehouse.",
+
+    "advantages-title": "Benefits of working with us",
+    "advantage-1-title": "Flexible schedule",
+    "advantage-1-text": "Convenient shifts",
+    "advantage-2-title": "Competitive salary",
+    "advantage-2-text": "High payment",
+    "advantage-3-title": "Social guarantees",
+    "advantage-3-text": "Official employment",
+
+    "vacancies-title": "Job Examples",
+    "vacancy-1-title": "Picker",
+    "vacancy-1-text": "Description of the picker job. Main tasks: order assembly, packing goods, and placing them in the warehouse.",
+    "vacancy-2-title": "Forklift Operator",
+    "vacancy-2-text": "Description of the forklift operator job. Operating equipment, moving goods, performing warehouse tasks.",
+    "vacancy-3-title": "Warehouse Manager",
+    "vacancy-3-text": "Description of the warehouse manager job. Managing inventory, coordinating staff, maintaining order.",
+
+    "benefits-title": "Benefits of working with us",
+    "benefit-1-title": "Stable salary",
+    "benefit-1-text": "Always on time. We guarantee regular payments without delays.",
+    "benefit-2-title": "Easy documentation",
+    "benefit-2-text": "Minimum bureaucracy. Simple and fast documentation process.",
+    "benefit-3-title": "Safe working conditions",
+    "benefit-3-text": "Adherence to all safety standards at the workplace. We care about your health and well-being.",
+    "benefit-4-title": "Friendly team",
+    "benefit-4-text": "Work in a team where you'll always find help and support.",
+    "benefit-5-title": "24/7 support",
+    "benefit-5-text": "Round-the-clock support for all employees on any issues.",
+    "benefit-6-title": "Modern equipment",
+    "benefit-6-text": "Work with modern and convenient warehouse systems and equipment.",
+
+    "mission-title": "Our mission",
+    "mission-text": "We offer reliable employment and create a safe working environment. Our cooperation with Biedronka allows us to offer the best conditions for our employees.",
+
+    "testimonials-title": "Testimonials",
+    "testimonial-1-text": "\"Great company! Thanks to them, I found a job at the Biedronka warehouse. The hiring process was smooth and hassle-free. Thank you!\"",
+    "testimonial-2-text": "\"Very satisfied with the cooperation! They helped me with accommodation and employment in Poland. Everything went according to plan.\"",
+    "testimonial-3-text": "\"Highly recommend! The agency quickly found me a job and offered good conditions. Always in touch, answering any questions.\"",
+
+    "faq-title": "Frequently Asked Questions",
+    "faq-question-1": "Is a visa required to work in Poland?",
+    "faq-answer-1": "Yes, a work visa or work permit is required to work in Poland. We will assist you with the documents.",
+    "faq-question-2": "What documents are required for employment?",
+    "faq-answer-2": "Passport, employment record book, and other documents that we will discuss during the interview.",
+    "faq-question-3": "Is it possible to work without knowing Polish?",
+    "faq-answer-3": "Yes, for some positions, knowledge of Polish is not required. However, basic knowledge of Polish is welcomed and may help you in your work.",
+
+    "cta-title": "Join us",
+    "cta-text": "Submit your application and start working in the warehouse today!",
+    "cta-button": "Contact us"
 }

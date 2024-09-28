@@ -58,6 +58,9 @@ function commonGetUserLanguage() {
 function commonSetLanguage(languageCode) {
     localStorage.setItem("language", languageCode);
     commonLoadLanguage(languageCode);
+    if (typeof homeLoadLanguage === "function") {
+        homeLoadLanguage(languageCode); // Обновляем слайды, если функция существует
+    }
 }
 
 
@@ -137,6 +140,34 @@ window.onload = function() {
     const savedLanguage = localStorage.getItem("language");
     if (savedLanguage) {
         commonLoadLanguage(savedLanguage); // Если язык был сохранён, используем его
+        if (typeof homeLoadLanguage === "function") {
+            homeLoadLanguage(savedLanguage); // Обновляем слайды на главной
+        }
+        
+        if (typeof aboutLoadLanguage === "function") {
+            aboutLoadLanguage(languageCode); // Обновление для страницы "О нас"
+        }
+        
+        if (typeof contactLoadLanguage === "function") {
+            contactLoadLanguage(languageCode); // Обновление для страницы "Контакты"
+        }
+        
+        if (typeof faqLoadLanguage === "function") {
+            faqLoadLanguage(languageCode); // Обновление для страницы "FAQ"
+        }
+        
+        if (typeof partnersLoadLanguage === "function") {
+            partnersLoadLanguage(languageCode); // Обновление для страницы "Партнёры"
+        }
+        
+        if (typeof privacyLoadLanguage === "function") {
+            privacyLoadLanguage(languageCode); // Обновление для страницы "Политика конфиденциальности"
+        }
+        
+        if (typeof servicesLoadLanguage === "function") {
+            servicesLoadLanguage(languageCode); // Обновление для страницы "Услуги"
+        }
+        
     } else {
         const languageCode = commonGetUserLanguage(); // Получаем язык браузера
         const supportedLanguages = ["ru", "en", "pl", "ua"];
