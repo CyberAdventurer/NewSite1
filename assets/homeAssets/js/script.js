@@ -166,10 +166,13 @@ function homeLoadLanguage(languageCode) {
                         document.getElementById("vacancies-title").textContent = data["vacancies-title"];
                         document.getElementById("vacancy-1-title").textContent = data["vacancy-1-title"];
                         document.getElementById("vacancy-1-text").textContent = data["vacancy-1-text"];
+                        document.getElementById("vacancy-1-button").textContent = data["vacancy-1-button"];
                         document.getElementById("vacancy-2-title").textContent = data["vacancy-2-title"];
                         document.getElementById("vacancy-2-text").textContent = data["vacancy-2-text"];
+                        document.getElementById("vacancy-2-button").textContent = data["vacancy-2-button"];
                         document.getElementById("vacancy-3-title").textContent = data["vacancy-3-title"];
                         document.getElementById("vacancy-3-text").textContent = data["vacancy-3-text"];
+                        document.getElementById("vacancy-3-button").textContent = data["vacancy-3-button"];
 
                         // Обновляем блок "Преимущества работы с нами"
                         document.getElementById("benefits-title").textContent = data["benefits-title"];
@@ -204,6 +207,7 @@ function homeLoadLanguage(languageCode) {
                         document.getElementById("faq-answer-2").textContent = data["faq-answer-2"];
                         document.getElementById("faq-question-3").textContent = data["faq-question-3"];
                         document.getElementById("faq-answer-3").textContent = data["faq-answer-3"];
+                        document.getElementById("faq-button").textContent = data["faq-button"];
 
                         // Обновляем Call-to-Action
                         document.getElementById("cta-title").textContent = data["cta-title"];

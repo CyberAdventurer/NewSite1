@@ -35,10 +35,13 @@
     "vacancies-title": "Przykłady ofert pracy",
     "vacancy-1-title": "Magazynier",
     "vacancy-1-text": "Opis pracy magazyniera. Główne zadania: kompletacja zamówień, pakowanie towarów i rozmieszczanie ich w magazynie.",
+    "vacancy-1-button": "Dowiedz się więcej",
     "vacancy-2-title": "Operator wózka widłowego",
     "vacancy-2-text": "Opis pracy operatora wózka widłowego. Obsługa sprzętu, przenoszenie towarów, wykonywanie zadań magazynowych.",
+    "vacancy-2-button": "Dowiedz się więcej",
     "vacancy-3-title": "Kierownik magazynu",
     "vacancy-3-text": "Opis pracy kierownika magazynu. Zarządzanie zapasami, koordynowanie pracy zespołu, utrzymywanie porządku.",
+    "vacancy-3-button": "Dowiedz się więcej",
 
     "benefits-title": "Zalety współpracy z nami",
     "benefit-1-title": "Stabilne wynagrodzenie",
@@ -69,6 +72,7 @@
     "faq-answer-2": "Paszport, książeczka pracownicza oraz inne dokumenty, o których powiemy podczas rozmowy kwalifikacyjnej.",
     "faq-question-3": "Czy można pracować bez znajomości języka polskiego?",
     "faq-answer-3": "Tak, w niektórych przypadkach znajomość języka polskiego nie jest wymagana. Jednak podstawowa znajomość języka jest mile widziana i może ułatwić pracę.",
+    "faq-button": "Przejdź na stronę FAQ",
 
     "cta-title": "Dołącz do nas",
     "cta-text": "Złóż aplikację i zacznij pracę w magazynie już dziś!",

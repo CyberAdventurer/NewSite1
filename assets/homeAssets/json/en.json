@@ -35,10 +35,13 @@
     "vacancies-title": "Job Examples",
     "vacancy-1-title": "Picker",
     "vacancy-1-text": "Description of the picker job. Main tasks: order assembly, packing goods, and placing them in the warehouse.",
+    "vacancy-1-button": "Learn more",
     "vacancy-2-title": "Forklift Operator",
     "vacancy-2-text": "Description of the forklift operator job. Operating equipment, moving goods, performing warehouse tasks.",
+    "vacancy-2-button": "Learn more",
     "vacancy-3-title": "Warehouse Manager",
     "vacancy-3-text": "Description of the warehouse manager job. Managing inventory, coordinating staff, maintaining order.",
+    "vacancy-3-button": "Learn more",
 
     "benefits-title": "Benefits of working with us",
     "benefit-1-title": "Stable salary",
@@ -69,7 +72,8 @@
     "faq-answer-2": "Passport, employment record book, and other documents that we will discuss during the interview.",
     "faq-question-3": "Is it possible to work without knowing Polish?",
     "faq-answer-3": "Yes, for some positions, knowledge of Polish is not required. However, basic knowledge of Polish is welcomed and may help you in your work.",
-
+    "faq-button": "Visit FAQ",
+    
     "cta-title": "Join us",
     "cta-text": "Submit your application and start working in the warehouse today!",
     "cta-button": "Contact us"
