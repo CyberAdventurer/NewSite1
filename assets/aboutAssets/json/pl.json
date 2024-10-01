@@ -1,0 +1,22 @@
+{
+    "about-history-title": "Historia agencji",
+    "about-history-text-1": "Nasza agencja została założona z misją pomagania ludziom w znalezieniu pracy i rozwoju zawodowego. Zaczynaliśmy od małych projektów, stopniowo rozwijając się w firmę współpracującą z czołowymi firmami na całym świecie.",
+    "about-history-text-2": "Nasza historia to historia sukcesu ludzi, którzy wierzyli w swoje możliwości i dążyli do poprawy swojej kariery. Jesteśmy dumni z naszych osiągnięć i nadal pomagamy tysiącom ludzi budować swoją przyszłość.",
+
+    "about-values-title": "Wartości i misja",
+    "about-values-text": "Staramy się, aby każdy znalazł swoje miejsce w świecie pracy i rozwijał się zawodowo. Naszą misją jest pomóc ludziom budować stabilną karierę i rozwijać swoje umiejętności w wiodących firmach.",
+
+    "about-partners-title": "Nasi Partnerzy",
+    "partner-1-text": "Współpracujemy z firmą X w realizacji projektów edukacyjnych.",
+    "partner-2-text": "Firma Y pomaga nam w zatrudnianiu młodych specjalistów.",
+    "partner-3-text": "Współpracujemy z firmą Z w celu rozwoju kariery w sektorze IT.",
+
+    "partners-cta": "Zostań partnerem",
+
+    "partner-form-title": "Formularz partnera",
+    "partner-form-name": "Imię:",
+    "partner-form-email": "Email:",
+    "partner-form-message": "Wiadomość:",
+    "partner-form-submit": "Wyślij",
+    "partner-form-error": "Błąd podczas wysyłania formularza. Spróbuj ponownie!"
+}

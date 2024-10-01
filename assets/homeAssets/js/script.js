@@ -228,3 +228,13 @@ function commonSetLanguage(languageCode) {
     commonLoadLanguage(languageCode);  // Шапка и футер
     homeLoadLanguage(languageCode);    // Например, только для слайдов
 }
+
+// Проверяем, если функция aboutLoadLanguage существует и загружаем язык
+if (typeof aboutLoadLanguage === "function") {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+        aboutLoadLanguage(savedLanguage);
+    } else {
+        aboutLoadLanguage('ru'); // Язык по умолчанию
+    }
+}

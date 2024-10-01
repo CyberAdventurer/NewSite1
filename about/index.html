@@ -36,11 +36,11 @@
                 </div>
                 <div class="language-option" onclick="commonSetLanguage('ua')">
                     <img src="../assets/common/img/flags/ua.png" alt="UA" class="flag"> <!-- Флаг Украины -->
-                    <span>Украинский</span>
+                    <span>Українська</span>
                 </div>
                 <div class="language-option" onclick="commonSetLanguage('pl')">
                     <img src="../assets/common/img/flags/pl.png" alt="PL" class="flag"> <!-- Флаг Польши -->
-                    <span>Poland</span>
+                    <span>Polski</span>
                 </div>
             </div>
         </div>
@@ -60,60 +60,57 @@
     <main>
         <!-- Блок с историей агентства -->
         <section class="about-history">
-            <h2>История агентства</h2>
-            <p>Наше агентство было основано с миссией помочь людям в поиске работы и профессиональном развитии. Мы начали с небольших проектов и постепенно выросли в компанию, которая сотрудничает с ведущими компаниями по всему миру.</p>
-            <p>Наша история – это история успеха людей, которые верили в свои возможности и стремились изменить свою карьеру к лучшему. Мы гордимся своими достижениями и тем, что продолжаем помогать тысячам людей строить своё будущее.</p>
+            <h2 id="about-history-title">История агентства</h2>
+            <p id="about-history-text-1">Наше агентство было основано с миссией помочь людям в поиске работы и профессиональном развитии. Мы начали с небольших проектов и постепенно выросли в компанию, которая сотрудничает с ведущими компаниями по всему миру.</p>
+            <p id="about-history-text-2">Наша история – это история успеха людей, которые верили в свои возможности и стремились изменить свою карьеру к лучшему. Мы гордимся своими достижениями и тем, что продолжаем помогать тысячам людей строить своё будущее.</p>
         </section>
     
         <!-- Блок с ценностями и миссией -->
         <section class="about-values-mission">
-            <h2>Ценности и миссия</h2>
-            <p>Мы стремимся к тому, чтобы каждый человек нашел своё место в мире труда и развивался профессионально. Наша миссия — помочь людям построить стабильную карьеру и развивать свои навыки в ведущих компаниях.</p>
+            <h2 id="about-values-title">Ценности и миссия</h2>
+            <p id="about-values-text">Мы стремимся к тому, чтобы каждый человек нашел своё место в мире труда и развивался профессионально. Наша миссия — помочь людям построить стабильную карьеру и развивать свои навыки в ведущих компаниях.</p>
         </section>
     
         <section class="about-partners">
-            <h2>Наши партнёры</h2>
+            <h2 id="about-partners-title">Наши партнёры</h2>
             <div class="partners-logos">
                 <div class="partner">
                     <img src="../assets/partnersAssets/img/partner1.webp" alt="Логотип партнёра 1">
-                    <p>Мы сотрудничаем с компанией X для реализации образовательных проектов.</p>
+                    <p id="partner-1-text">Мы сотрудничаем с компанией X для реализации образовательных проектов.</p>
                 </div>
                 <div class="partner">
                     <img src="../assets/partnersAssets/img/partner2.webp" alt="Логотип партнёра 2">
-                    <p>Компания Y помогает нам в трудоустройстве молодых специалистов.</p>
+                    <p id="partner-2-text">Компания Y помогает нам в трудоустройстве молодых специалистов.</p>
                 </div>
                 <div class="partner">
                     <img src="../assets/partnersAssets/img/partner3.webp" alt="Логотип партнёра 3">
-                    <p>Сотрудничаем с компанией Z для развития карьеры в IT-сфере.</p>
+                    <p id="partner-3-text">Сотрудничаем с компанией Z для развития карьеры в IT-сфере.</p>
                 </div>
             </div>
               <!-- Кнопка для открытия формы -->
             <div class="partners-cta">
-                <a href="javascript:void(0)" class="btn" onclick="toggleForm()">Стать партнёром</a>
+                <a href="javascript:void(0)" class="btn" id="partners-cta-button" onclick="toggleForm()">Стать партнёром</a>
             </div>
         </section>
         
-      
-
         <!-- Форма для партнёров (скрыта по умолчанию) -->
         <div class="partner-form" id="partnerForm">
-            <h3>Форма для партнёров</h3>
+            <h3 id="partner-form-title">Форма для партнёров</h3>
             <form action="https://formspree.io/f/xeojwpzz" method="POST">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                <label for="name" id="form-name-label">Имя:</label>
+                <input type="text" id="partner-form-name" name="name" placeholder="Ваше имя" required>
             
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                <label for="email" id="form-email-label">Email:</label>
+                <input type="email" id="partner-form-email" name="email" placeholder="Ваш email" required>
             
-                <label for="message">Сообщение:</label>
-                <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+                <label for="message" id="form-message-label">Сообщение:</label>
+                <textarea id="partner-form-message" name="message" placeholder="Ваше сообщение" required></textarea>
             
-                <button type="submit" class="btn">Отправить</button>
+                <button type="submit" class="btn" id="form-submit-button">Отправить</button>
             </form>
-            <p id="form-message" style="color: red; display: none;">Ошибка при отправке формы. Попробуйте снова!</p>
+            <p id="form-error-message" style="color: red; display: none;">Ошибка при отправке формы. Попробуйте снова!</p>
         </div>
     </main>
-
 
     <footer>
         <p id="footer-link">&copy; 2024 Мой Сайт. Все права защищены.</p>
