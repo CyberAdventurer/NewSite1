@@ -1,0 +1,35 @@
+{
+    "services-title": "Available Job Positions",
+
+    "vacancy-picker-title": "Order Picker",
+    "vacancy-picker-text": "Assembling orders in the warehouse, checking the quantity and quality of goods. Work in the Biedronka warehouse.",
+    "vacancy-picker-link": "Learn More",
+
+    "vacancy-helper-title": "Warehouse Helper",
+    "vacancy-helper-text": "Assisting in organizing warehouse operations, packing goods, and supporting warehouse processes.",
+    "vacancy-helper-link": "Learn More",
+
+    "vacancy-loader-title": "Loading/Unloading",
+    "vacancy-loader-text": "Loading and unloading goods in the warehouse. Responsible for the movement of goods.",
+    "vacancy-loader-link": "Learn More",
+
+    "conditions-title": "Working Conditions",
+    "salary-title": "Salary",
+    "salary-text": "Competitive salary with the possibility of bonuses.",
+    "schedule-title": "Work Schedule",
+    "schedule-text": "Flexible working hours, possibility to choose shifts (day or night).",
+    "bonuses-title": "Bonuses",
+    "bonuses-text": "Quarterly bonuses and incentives for exceeding targets.",
+    "accommodation-title": "Accommodation",
+    "accommodation-text": "Housing is provided for permanent employees.",
+
+    "process-title": "Employment Process",
+    "step-1-title": "Step 1: Fill out the Application",
+    "step-1-text": "Complete the form on the website with your personal details and work experience.",
+    "step-2-title": "Step 2: Interview",
+    "step-2-text": "Attend an interview with the recruitment manager to clarify work details.",
+    "step-3-title": "Step 3: Start Work",
+    "step-3-text": "After a successful interview, you will receive a contract and can start working.",
+
+    "contact-link-to": "Contact Us"
+}

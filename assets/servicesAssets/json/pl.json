@@ -1,0 +1,35 @@
+{
+    "services-title": "Dostępne oferty pracy",
+
+    "vacancy-picker-title": "Kompletator zamówień",
+    "vacancy-picker-text": "Kompletowanie zamówień w magazynie, sprawdzanie ilości i jakości towarów. Praca w magazynie Biedronka.",
+    "vacancy-picker-link": "Dowiedz się więcej",
+
+    "vacancy-helper-title": "Pracownik pomocniczy",
+    "vacancy-helper-text": "Pomoc w organizacji pracy magazynu, pakowanie towarów i wsparcie procesów magazynowych.",
+    "vacancy-helper-link": "Dowiedz się więcej",
+
+    "vacancy-loader-title": "Załadunek/rozładunek",
+    "vacancy-loader-text": "Praca przy załadunku i rozładunku towarów w magazynie. Odpowiedzialność za przemieszczanie towarów.",
+    "vacancy-loader-link": "Dowiedz się więcej",
+
+    "conditions-title": "Warunki pracy",
+    "salary-title": "Wynagrodzenie",
+    "salary-text": "Konkurencyjne wynagrodzenie z możliwością premii.",
+    "schedule-title": "Harmonogram pracy",
+    "schedule-text": "Elastyczny czas pracy, możliwość wyboru zmiany (dzienna lub nocna).",
+    "bonuses-title": "Premie",
+    "bonuses-text": "Kwartalne premie i bonusy za przekroczenie celów.",
+    "accommodation-title": "Zakwaterowanie",
+    "accommodation-text": "Zakwaterowanie dla stałych pracowników.",
+
+    "process-title": "Proces zatrudnienia",
+    "step-1-title": "Krok 1: Wypełnij formularz",
+    "step-1-text": "Wypełnij formularz na stronie, podając swoje dane i doświadczenie zawodowe.",
+    "step-2-title": "Krok 2: Rozmowa kwalifikacyjna",
+    "step-2-text": "Przejdź rozmowę kwalifikacyjną z menedżerem ds. rekrutacji, aby uzyskać szczegóły dotyczące pracy.",
+    "step-3-title": "Krok 3: Rozpoczęcie pracy",
+    "step-3-text": "Po udanej rozmowie kwalifikacyjnej otrzymasz umowę i będziesz mógł rozpocząć pracę.",
+
+    "contact-link-to": "Skontaktuj się"
+}

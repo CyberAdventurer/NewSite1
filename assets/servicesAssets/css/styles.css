@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
 /* Общие стили */
 body, html {
     margin: 0;
@@ -110,8 +112,6 @@ main {
 .condition-block p {
     color: #666;
 }
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 /* Стили для иконок */
 .condition-block i {
