@@ -60,59 +60,60 @@
     <main>
         <!-- Блок с контактной информацией -->
         <section class="contact-info">
-            <h2>Контактная информация</h2>
-            <p><i class="fas fa-phone"></i> Телефон: <a href="tel:+48123456789">+48 123 456 789</a></p>
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@agency.com">info@agency.com</a></p>
-            <p><i class="fas fa-map-marker-alt"></i> Адрес: ул. Примерная, 123, Варшава</p>
-            <p><i class="fas fa-clock"></i> Рабочие часы: Пн-Пт, 9:00 - 18:00</p>
+            <h2 id="contact-info-title">Контактная информация</h2>
+            <p><i class="fas fa-phone"></i> <span id="contact-phone">Телефон: <a href="tel:+48123456789">+48 123 456 789</a></span></p>
+            <p><i class="fas fa-envelope"></i> <span id="contact-email">Email: <a href="mailto:info@agency.com">info@agency.com</a></span></p>
+            <p><i class="fas fa-map-marker-alt"></i> <span id="contact-address">Адрес: ул. Примерная, 123, Варшава</span></p>
+            <p><i class="fas fa-clock"></i> <span id="contact-hours">Рабочие часы: Пн-Пт, 9:00 - 18:00</span></p>
         </section>
-
+    
         <!-- Форма обратной связи -->
         <section class="contact-form">
-            <h2>Свяжитесь с нами</h2>
+            <h2 id="contact-form-title">Свяжитесь с нами</h2>
             <form action="https://formspree.io/f/xeojwpzz" method="POST">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Ваш email" required>
-
-                <label for="message">Сообщение:</label>
-                <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
-
-                <button type="submit" class="btn">Отправить сообщение</button>
+                <label for="name" id="form-name-label">Имя:</label>
+                <input type="text" id="text-form-name" name="name" placeholder="Ваше имя" required>
+    
+                <label for="email" id="form-email-label">Email:</label>
+                <input type="email" id="text-form-email" name="email" placeholder="Ваш email" required>
+    
+                <label for="message" id="form-message-label">Сообщение:</label>
+                <textarea id="text-form-message" name="message" placeholder="Ваше сообщение" required></textarea>
+    
+                <button type="submit" class="btn" id="form-submit-button">Отправить сообщение</button>
             </form>
         </section>
-
+    
         <!-- Социальные сети -->
         <section class="social-media">
-            <h2>Мы в соцсетях</h2>
+            <h2 id="social-media-title">Мы в соцсетях</h2>
             <div class="social-icons">
-                <a href="../https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="../https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="../https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
         </section>
-
-        <h2>Отзывы</h2>
+    
+        <h2 id="testimonials-title">Отзывы</h2>
         <div class="testimonials">
             <div class="testimonial">
                 <img src="../assets/contactAssets/img/avatar1.webp" alt="Avatar" class="testimonial-avatar">
-                <p>"Отличная компания! Благодаря им я нашёл работу на складе Бедрёнка. Процесс трудоустройства прошёл легко и без проблем. Спасибо!"</p>
+                <p id="testimonial-1-text">"Отличная компания! Благодаря им я нашёл работу на складе Бедрёнка. Процесс трудоустройства прошёл легко и без проблем. Спасибо!"</p>
                 <h4>Иван Петров</h4>
             </div>
             <div class="testimonial">
                 <img src="../assets/contactAssets/img/avatar2.webp" alt="Avatar" class="testimonial-avatar">
-                <p>"Очень довольна сотрудничеством! Ребята помогли мне с жильём и трудоустройством в Польше. Всё прошло чётко по плану."</p>
+                <p id="testimonial-2-text">"Очень довольна сотрудничеством! Ребята помогли мне с жильём и трудоустройством в Польше. Всё прошло чётко по плану."</p>
                 <h4>Мария Иванова</h4>
             </div>
             <div class="testimonial">
                 <img src="../assets/contactAssets/img/avatar3.webp" alt="Avatar" class="testimonial-avatar">
-                <p>"Рекомендую! Агентство быстро нашло для меня вакансию и предложило хорошие условия. Всегда на связи, отвечают на любые вопросы."</p>
+                <p id="testimonial-3-text">"Рекомендую! Агентство быстро нашло для меня вакансию и предложило хорошие условия. Всегда на связи, отвечают на любые вопросы."</p>
                 <h4>Анна Смирнова</h4>
             </div>
         </div>
     </main>
+    
     
     
 

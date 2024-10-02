@@ -1,0 +1,57 @@
+{
+    "requirements-title": "Wymagania dla kandydatów",
+    "requirement-1": "Dokumenty: paszport, pozwolenie na pracę.",
+    "requirement-2": "Wiek: od 18 lat.",
+    "requirement-3": "Doświadczenie zawodowe: nie wymagane, szkolenie na miejscu.",
+    "requirement-4": "Znajomość języka: podstawowy polski jest mile widziany.",
+
+    "apply-process-title": "Jak złożyć wniosek",
+    "apply-step-1": "Wypełnij formularz zgłoszeniowy na naszej stronie.",
+    "apply-step-2": "Dołącz niezbędne dokumenty.",
+    "apply-step-3": "Oczekuj telefonu od naszego menedżera w ciągu 1-2 dni roboczych.",
+    "apply-step-4": "Przejdź rozmowę kwalifikacyjną i rozpocznij pracę.",
+
+    "faq-title": "Najczęściej zadawane pytania (FAQ)",
+
+    "faq-question-1": "Czy potrzebna jest wiza do pracy w Polsce?",
+    "faq-answer-1": "Tak, do pracy w Polsce wymagana jest wiza pracownicza lub pozwolenie na pracę. Pomożemy Ci w załatwieniu dokumentów.",
+
+    "faq-question-2": "Jakie dokumenty są potrzebne do złożenia wniosku?",
+    "faq-answer-2": "Do złożenia wniosku potrzebny jest paszport i pozwolenie na pracę (jeśli wymagane). Inne dokumenty mogą być wymagane w zależności od stanowiska.",
+
+    "faq-question-3": "Czy mogę pracować bez znajomości języka polskiego?",
+    "faq-answer-3": "Tak, znajomość polskiego nie jest wymagana na niektórych stanowiskach. Jednak podstawowa znajomość polskiego jest mile widziana i może pomóc w pracy.",
+
+    "faq-question-4": "Jak długo trwa proces rozpatrywania wniosku?",
+    "faq-answer-4": "Przetwarzamy wnioski w ciągu 1-2 dni roboczych. Następnie nasz menedżer skontaktuje się z Tobą w celu potwierdzenia szczegółów.",
+
+    "faq-question-5": "Czy wymagana jest rozmowa kwalifikacyjna?",
+    "faq-answer-5": "W większości przypadków formalna rozmowa kwalifikacyjna nie jest wymagana. Będziesz musiał podpisać niezbędne dokumenty i przejść badania lekarskie przed rozpoczęciem pracy.",
+
+    "faq-question-6": "Jakie są warunki pracy?",
+    "faq-answer-6": "Warunki pracy zależą od stanowiska. Oferujemy stabilne wynagrodzenie i system zmian — dziennych i nocnych.",
+
+    "faq-question-7": "Czy jest wybór między zmianami dziennymi a nocnymi?",
+    "faq-answer-7": "Nie ma wyboru zmian. Pracownicy zmieniają zmiany dzienne na nocne, zazwyczaj raz w tygodniu lub zgodnie z ustaleniami z pracodawcą.",
+
+    "faq-question-8": "Czy zapewniane jest darmowe wyżywienie?",
+    "faq-answer-8": "Tak, pracownicy otrzymują jeden darmowy posiłek podczas zmiany.",
+
+    "faq-question-9": "Czy są jakieś ograniczenia wiekowe dla kandydatów?",
+    "faq-answer-9": "Minimalny wiek do pracy to 18 lat. Nie ma górnej granicy wieku, jeśli masz zdolność i chęć do pracy.",
+
+    "faq-question-10": "Czy nadgodziny są płatne?",
+    "faq-answer-10": "Nadgodziny są opłacane według standardowych stawek.",
+
+    "faq-question-11": "Czy zapewniacie zakwaterowanie?",
+    "faq-answer-11": "Tak, możemy pomóc Ci znaleźć tymczasowe lub stałe zakwaterowanie w pobliżu miejsca pracy. Skontaktuj się z menedżerem, aby uzyskać szczegółowe informacje.",
+
+    "contact-form-title": "Nie znalazłeś odpowiedzi? Skontaktuj się z nami!",
+    "contact-name-label": "Twoje imię",
+    "contact-name-placeholder": "Wpisz swoje imię",
+    "contact-email-label": "Twój email",
+    "contact-email-placeholder": "Wpisz swój email",
+    "contact-message-label": "Wiadomość",
+    "contact-message-placeholder": "Wpisz swoją wiadomość",
+    "contact-submit-button": "Wyślij wiadomość"
+}

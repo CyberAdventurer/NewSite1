@@ -1,0 +1,19 @@
+{
+    "policy-title": "Privacy Policy",
+    "policy-intro": "We respect your privacy and are committed to protecting your personal data. This policy describes how we collect and protect your data.",
+    "policy-data-title": "What data do we collect?",
+    "policy-data-intro": "When you use our website, we may collect the following data:",
+    "policy-data-name": "Name",
+    "policy-data-email": "Email",
+    "policy-data-message": "Message through the contact form",
+    "policy-usage-title": "How do we use your data?",
+    "policy-usage": "The data you provide through the contact form is used solely to respond to your inquiries.",
+    "policy-cookies-title": "Use of Cookies",
+    "policy-cookies": "We use cookies solely to save your language preference on the website. This data is not shared with third parties and is not used for tracking.",
+    "policy-security-title": "How do we protect your data?",
+    "policy-security": "We apply modern security measures to protect your data from loss and unauthorized access.",
+    "policy-rights-title": "Your rights",
+    "policy-rights": "You have the right to request access, correction, or deletion of your data by sending us a request.",
+    "policy-changes-title": "Changes to the privacy policy",
+    "policy-changes": "We may periodically update this policy. Any changes will be posted on this page."
+}

@@ -59,51 +59,52 @@
 
     <main>
         <section class="partners">
-            <h2>Наши партнёры</h2>
+            <h2 id="partners-title">Наши партнёры</h2>
             <div class="partners-grid">
                 <div class="partner">
                     <img src="../assets/partnersAssets/img/partner1.webp" alt="Логотип Бедрёнка">
-                    <p>Сотрудничество с Бедрёнкой уже более 3 лет. Работники нашего агентства помогают в управлении складами.</p>
+                    <p id="partner-1-description">Сотрудничество с Бедрёнкой уже более 3 лет. Работники нашего агентства помогают в управлении складами.</p>
                 </div>
                 <div class="partner">
                     <img src="../assets/partnersAssets/img/partner2.webp" alt="Логотип Партнёр 2">
-                    <p>Сотрудничество с компанией Партнёр 2 для подбора персонала на логистические проекты.</p>
+                    <p id="partner-2-description">Сотрудничество с компанией Партнёр 2 для подбора персонала на логистические проекты.</p>
                 </div>
                 <div class="partner">
                     <img src="../assets/partnersAssets/img/partner3.webp" alt="Логотип Партнёр 3">
-                    <p>Работа с Партнёром 3 по реализации крупного складского проекта в Варшаве.</p>
+                    <p id="partner-3-description">Работа с Партнёром 3 по реализации крупного складского проекта в Варшаве.</p>
                 </div>
-                <!-- Добавить больше партнёров, если нужно -->
             </div>
         </section>
+    
         <section class="partner-opportunities">
-            <h2>Возможности для новых партнёров</h2>
-            <p>
+            <h2 id="opportunities-title">Возможности для новых партнёров</h2>
+            <p id="opportunities-text">
                 Мы открыты для новых партнёрств и предлагаем гибкие условия сотрудничества. 
                 Наши партнёры получают доступ к широкой базе квалифицированных работников 
                 и выгодные условия по подбору персонала. Свяжитесь с нами, чтобы узнать больше о возможностях сотрудничества.
             </p>
         </section>
+    
         <section class="partner-contact">
-            <h2>Свяжитесь с нами</h2>
+            <h2 id="contact-title">Свяжитесь с нами</h2>
             <form action="https://formspree.io/f/xeojwpzz" method="POST">
-                <label for="company-name">Имя компании:</label>
+                <label for="company-name" id="company-name-label">Имя компании:</label>
                 <input type="text" id="company-name" name="company-name" placeholder="Название компании" required>
-        
-                <label for="contact-person">Контактное лицо:</label>
+    
+                <label for="contact-person" id="contact-person-label">Контактное лицо:</label>
                 <input type="text" id="contact-person" name="contact-person" placeholder="Ваше имя" required>
-        
-                <label for="email">Email:</label>
+    
+                <label for="email" id="email-label">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Ваш email" required>
-        
-                <label for="message">Сообщение:</label>
+    
+                <label for="message" id="message-label">Сообщение:</label>
                 <textarea id="message" name="message" placeholder="Ваш запрос" required></textarea>
-        
-                <button type="submit">Отправить запрос</button>
+    
+                <button type="submit" id="submit-button">Отправить запрос</button>
             </form>
         </section>
-                
     </main>
+    
     
     
 

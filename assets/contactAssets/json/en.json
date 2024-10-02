@@ -1,0 +1,23 @@
+{
+    "contact-info-title": "Contact Information",
+    "contact-phone": "Phone: +48 123 456 789",
+    "contact-email": "Email: info@agency.com",
+    "contact-address": "Address: Sample St, 123, Warsaw",
+    "contact-hours": "Working hours: Mon-Fri, 9:00 AM - 6:00 PM",
+
+    "contact-form-title": "Contact Us",
+    "form-name-label": "Name:",
+    "form-email-label": "Email:",
+    "form-message-label": "Message:", 
+    "text-form-name": "Your name",
+    "text-form-email": "Your email",
+    "text-form-message": "Your message",
+    "form-submit-button": "Send Message",
+
+    "social-media-title": "Follow us on Social Media",
+
+    "testimonials-title": "Testimonials",
+    "testimonial-1-text": "\"Great company! Thanks to them I found a job at the Biedronka warehouse. The hiring process was easy and hassle-free. Thank you!\"",
+    "testimonial-2-text": "\"Very satisfied with the cooperation! The team helped me with housing and employment in Poland. Everything went according to plan.\"",
+    "testimonial-3-text": "\"Highly recommend! The agency quickly found a job for me and offered good conditions. They are always in touch and answer any questions.\""
+}

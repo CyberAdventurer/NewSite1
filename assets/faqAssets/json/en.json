@@ -1,0 +1,57 @@
+{
+    "requirements-title": "Candidate Requirements",
+    "requirement-1": "Documents: passport, work permit.",
+    "requirement-2": "Age: from 18 years old.",
+    "requirement-3": "Work experience: not required, on-the-job training.",
+    "requirement-4": "Language skills: basic Polish is preferred.",
+
+    "apply-process-title": "How to Apply",
+    "apply-step-1": "Fill out the application form on our website.",
+    "apply-step-2": "Attach the necessary documents.",
+    "apply-step-3": "Wait for a call from our manager within 1-2 business days.",
+    "apply-step-4": "Pass the interview and start working.",
+
+    "faq-title": "Frequently Asked Questions (FAQ)",
+
+    "faq-question-1": "Do I need a visa to work in Poland?",
+    "faq-answer-1": "Yes, a work visa or work permit is required to work in Poland. We will help you with the paperwork.",
+
+    "faq-question-2": "What documents are needed to apply?",
+    "faq-answer-2": "You will need a passport and work permit (if required) to apply. Other documents may be needed depending on the position.",
+
+    "faq-question-3": "Can I work without knowing Polish?",
+    "faq-answer-3": "Yes, Polish is not required for some positions. However, basic knowledge of Polish is preferred and may help you on the job.",
+
+    "faq-question-4": "How long does it take to process the application?",
+    "faq-answer-4": "We process applications within 1-2 business days. After that, our manager will contact you to confirm the details.",
+
+    "faq-question-5": "Is an interview required?",
+    "faq-answer-5": "In most cases, no formal interview is required. You will need to sign the necessary documents and pass a medical exam before starting work.",
+
+    "faq-question-6": "What are the working conditions?",
+    "faq-answer-6": "Working conditions depend on the position. We offer stable pay and a shift schedule — day and night shifts.",
+
+    "faq-question-7": "Is there a choice between day and night shifts?",
+    "faq-answer-7": "There is no choice between shifts. Employees rotate between day and night shifts, usually once a week or as agreed with the employer.",
+
+    "faq-question-8": "Is free food provided?",
+    "faq-answer-8": "Yes, employees receive one free meal during their shift.",
+
+    "faq-question-9": "Are there any age restrictions for applicants?",
+    "faq-answer-9": "The minimum age for work is 18. There is no upper age limit if you have the ability and desire to work.",
+
+    "faq-question-10": "Is overtime paid?",
+    "faq-answer-10": "Overtime is paid according to standard rates.",
+
+    "faq-question-11": "Is housing provided?",
+    "faq-answer-11": "Yes, we can help you find temporary or permanent housing near your place of work. Contact your manager for details.",
+
+    "contact-form-title": "Didn’t find the answer? Contact us!",
+    "contact-name-label": "Your name",
+    "contact-name-placeholder": "Enter your name",
+    "contact-email-label": "Your email",
+    "contact-email-placeholder": "Enter your email",
+    "contact-message-label": "Message",
+    "contact-message-placeholder": "Enter your message",
+    "contact-submit-button": "Send message"
+}

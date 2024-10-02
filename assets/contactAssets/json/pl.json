@@ -1,0 +1,23 @@
+{
+    "contact-info-title": "Informacje kontaktowe",
+    "contact-phone": "Telefon: +48 123 456 789",
+    "contact-email": "Email: info@agency.com",
+    "contact-address": "Adres: ul. Przykładowa, 123, Warszawa",
+    "contact-hours": "Godziny pracy: pon.-pt., 9:00 - 18:00",
+
+    "contact-form-title": "Skontaktuj się z nami",
+    "form-name-label": "Imię:",
+    "form-email-label": "Email:",
+    "form-message-label": "Wiadomość:",
+    "text-form-name": "Twoje imię",
+    "text-form-email": "Twój email",
+    "text-form-message": "Twoja wiadomość",
+    "form-submit-button": "Wyślij wiadomość",
+
+    "social-media-title": "Znajdź nas w social media",
+
+    "testimonials-title": "Opinie",
+    "testimonial-1-text": "\"Świetna firma! Dzięki nim znalazłem pracę w magazynie Biedronka. Proces zatrudnienia przebiegł sprawnie i bezproblemowo. Dziękuję!\"",
+    "testimonial-2-text": "\"Jestem bardzo zadowolona ze współpracy! Zespół pomógł mi z zakwaterowaniem i zatrudnieniem w Polsce. Wszystko poszło zgodnie z planem.\"",
+    "testimonial-3-text": "\"Polecam! Agencja szybko znalazła dla mnie pracę i zaoferowała dobre warunki. Zawsze są dostępni i odpowiadają na wszelkie pytania.\""
+}

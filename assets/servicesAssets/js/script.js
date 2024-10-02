@@ -65,7 +65,6 @@ function commonSetLanguage(languageCode) {
     servicesLoadLanguage(languageCode);   // Обновляем контент страницы "Услуги"
 }
 
-
 // Проверяем, если функция servicesLoadLanguage существует и загружаем язык
 if (typeof servicesLoadLanguage === "function") {
     const savedLanguage = localStorage.getItem("language");
