@@ -12,21 +12,6 @@ document.querySelectorAll('.faq-question').forEach(button => {
     });
 });
 
-// Функция для обработки раскрытия вопросов FAQ
-document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', () => {
-        const faqItem = button.parentElement;
-        faqItem.classList.toggle('active');
-
-        const answer = faqItem.querySelector('.faq-answer');
-        if (faqItem.classList.contains('active')) {
-            answer.style.maxHeight = answer.scrollHeight + 'px';
-        } else {
-            answer.style.maxHeight = '0';
-        }
-    });
-});
-
 // Функция для загрузки перевода страницы "Требования и FAQ"
 function faqLoadLanguage(languageCode) {
     let jsonPath = `../assets/faqAssets/json/${languageCode}.json`;

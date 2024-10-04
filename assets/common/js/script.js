@@ -14,6 +14,17 @@ function commonToggleMenu() {
     }
 }
 
+window.addEventListener('scroll', function() {
+    let scrolled = window.pageYOffset;
+    let background = document.querySelector('body::before');
+
+    // Если бы body был обычным элементом, его background можно было бы изменять так:
+    // document.body.style.backgroundPositionY = -(scrolled * 0.5) + 'px';
+
+    // Так как используется псевдоэлемент, нужно обновлять background через сам элемент body
+    document.body.style.setProperty('--scroll', -(scrolled * 0.5) + 'px');
+});
+
 // Показать/скрыть новое меню с недостающими ссылками
 function commonToggleExtraMenu() {
     var extraMenu = document.getElementById("extraMenu");

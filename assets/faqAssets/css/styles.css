@@ -53,8 +53,7 @@
     margin-bottom: 15px;
     line-height: 1.6;
 }
-
-/* Стиль для FAQ */
+/* Общий стиль для блока FAQ */
 .faq {
     width: 80%;
     max-width: 1200px;
@@ -75,48 +74,78 @@
 
 /* Стиль для элементов FAQ */
 .faq-item {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 5px;
     overflow: hidden;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
 
+/* Вопросы FAQ */
 .faq-question {
     width: 100%;
     padding: 15px;
     font-size: 18px;
     text-align: left;
-    background-color: #f9f9f9;
+    background-color: rgba(249, 249, 249, 0.8); /* Прозрачность по умолчанию */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     outline: none;
-    color: #333; /* Контрастный цвет текста */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 
 .faq-question:hover {
-    background-color: #f1f1f1;
+    background-color: rgba(241, 241, 241, 0.9); /* Прозрачность при наведении */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01); /* Эффект небольшого увеличения */
+    opacity: 1; /* Полностью видимая на hover */
 }
 
+/* Ответы FAQ */
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.5s ease, padding 0.5s ease, opacity 0.5s ease;
     background-color: #fff;
     border-top: 1px solid #ccc;
+    padding: 0 10px; /* Убираем padding по умолчанию */
+    opacity: 0; /* Прозрачность по умолчанию */
 }
 
 .faq-answer p {
-    padding: 10px;
+    padding: 15px 0; /* Возвращаем padding только для текста */
     font-size: 16px;
     color: #333;
+    transition: opacity 0.3s ease;
 }
 
+/* Активный элемент FAQ */
 .faq-item.active .faq-answer {
-    max-height: 100px; /* Достаточно для показа текста */
+    max-height: 1000px; /* Достаточно для показа текста */
+    padding: 10px 10px; /* Добавляем padding при открытии */
+    opacity: 1; /* Показываем плавно */
 }
+
+.faq-item.active .faq-answer p {
+    opacity: 1; /* Прозрачность текста при открытии */
+}
+
+.faq-item {
+    margin-bottom: 15px; /* Пространство между элементами */
+    border-radius: 5px;
+    overflow: hidden; /* Чтобы контент не выходил за пределы границы */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Более выраженная тень для активного элемента */
+.faq-item.active {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Кнопки */
 button {

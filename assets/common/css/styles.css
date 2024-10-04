@@ -16,11 +16,13 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../img/slanted-stars.svg'); /* Файл SVG */
+    background-image: url('../img/slanted-stars.svg');
     background-size: contain;
-    opacity: 0.1; /* Прозрачность для ненавязчивости */
-    pointer-events: none; 
+    opacity: 0.04;
+    pointer-events: none;
+    background-position: 0 var(--scroll, 0); /* Управляем вертикальной позицией через переменную */
 }
+
 /* Минималистичные блоки */
 .container {
     max-width: 1200px;
